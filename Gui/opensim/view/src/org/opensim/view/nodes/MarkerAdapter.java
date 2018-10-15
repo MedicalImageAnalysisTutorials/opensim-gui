@@ -184,4 +184,9 @@ public class MarkerAdapter  {
         guiElem.setUnsavedChangesFlag(true);
     }
 
+    public void setLocation(Vec3 locationVec3) {
+        setOffsetString("("+locationVec3.get(0)+" "
+            +locationVec3.get(1)+" "+locationVec3.get(2)+")");
+    }
+
 }
